@@ -6,7 +6,6 @@
 }
 
 .discourse-status-alert {
-  width: fit-content;
   padding: 0.25em 1em;
   border-radius: 0 0 8px 8px;
   &.indicator-minor {
@@ -19,9 +18,15 @@
     background-color: #c63c1b;
   }
   a {
+    display: flex;
+    align-items: center;
     color: var(--secondary);
     font-size: var(--font-down-1);
     font-weight: 600;
-    text-align: center;
+    svg {
+      width: 1.3em;
+      height: 1.3em;
+      margin-right: 0.5em;
+    }
   }
 }
