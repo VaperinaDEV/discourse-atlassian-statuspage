@@ -1,3 +1,8 @@
+.below-site-header-outlet.status {
+  max-width: calc(100vw - 20px);
+  margin: auto;
+}
+
 .discourse-status-alert {
   max-width: 1110px;
   &.indicator-minor {
