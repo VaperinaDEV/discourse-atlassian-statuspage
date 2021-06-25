@@ -1,5 +1,6 @@
 import Component from "@ember/component";
 const API_ENDPOINT = settings.status_endpoint;
+const { iconHTML } = require("discourse-common/lib/icon-library");
 
 export default Component.extend({
   showStatus: null,
