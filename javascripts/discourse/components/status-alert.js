@@ -1,5 +1,6 @@
 import Component from "@ember/component";
 const API_ENDPOINT = settings.status_endpoint;
+const { iconHTML } = require("discourse-common/lib/icon-library");
 
 export default Component.extend({
   showStatus: null,
@@ -27,10 +28,10 @@ export default Component.extend({
             if (status.description !== "All Systems Operational") {
               let statusMessage =
                 status.indicator.toLowerCase() === "minor"
-                  ? settings.minor_status_message
+                  ? {{d-icon 'exclamation-circle'}} settings.minor_status_message
                   : status.indicator.toLowerCase() === "major"
-                  ? settings.major_status_message
-                  : settings.critical_status_message;
+                  ? {{d-icon 'exclamation-circle'}} settings.major_status_message
+                  : {{d-icon 'exclamation-circle'}} settings.critical_status_message;
 
               this.set("statusMessage", statusMessage);
               this.set("indicator", status.indicator.toLowerCase());
