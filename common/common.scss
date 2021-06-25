@@ -6,10 +6,10 @@
 .discourse-status-alert {
   max-width: 1110px;
   &.indicator-minor {
-    background-color: orange;
+    background-color: #f1c40f;
   }
   &.indicator-major {
-    background-color: #e45735;
+    background-color: #ffa500;
   }
   &.indicator-critical {
     background-color: #c63c1b;
