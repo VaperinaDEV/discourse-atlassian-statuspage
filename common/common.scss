@@ -1,10 +1,14 @@
 .below-site-header-outlet.status {
   max-width: calc(100vw - 20px);
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .discourse-status-alert {
-  max-width: 1110px;
+  width: fit-content;
+  padding: 0 1em;
+  border-radius: 0 0 4px 4px;
   &.indicator-minor {
     background-color: #f1c40f;
   }
@@ -14,13 +18,10 @@
   &.indicator-critical {
     background-color: #c63c1b;
   }
-  margin: 2em auto 0 auto;
-  padding: 1em 0;
-  border-radius: 8px;
   a {
     color: var(--secondary);
+    font-size: var(--font-down-1);
     font-weight: 600;
-    display: block;
     text-align: center;
   }
 }
